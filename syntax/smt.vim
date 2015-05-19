@@ -14,7 +14,7 @@ syn match smtLabel "\<:[a-zA-z]\S*\>"
 syn match smtNumber "\<[1-9][0-9]*\>\|\<#x[0-9a-f]*\>\|\<#b[01]*\>"
 syn match smtFloat "\<[0-9]\+\.[0-9]\+\([eE][-+]\=[0-9]\+\)\=\>"
 syn match smtOperators "[!$%&\*\+/<=>\?@\\^|~]\+\|\<[_-]\>"
-syn keyword smtStatements ite and or not iff distinct
+syn keyword smtStatements ite and or not iff distinct as
 
 highlight def link smtKeywords Include
 highlight def link smtString String

@@ -4,7 +4,7 @@ elseif exists("b:current_syntax")
   finish
 endif
 
-syn keyword smtKeywords assert echo check-sat get-proof get-model declare-sort define-sort declare-const declare-fun declare-datatypes set-option forall exit
+syn keyword smtKeywords assert echo check-sat get-proof get-model declare-sort define-sort declare-const declare-fun define-fun declare-datatypes set-option forall exit
 syn region smtString start=+"+ skip=+\\\\\|\\"+ end=+"+
 syn match smtSort "\<[A-Z][a-zA-Z0-9_']*\>"
 syn match smtDelimiter  "[()]"
